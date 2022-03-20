@@ -11,6 +11,14 @@
 		CCB9BB2827E72E7200CE8784 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB2727E72E7200CE8784 /* ContentView.swift */; };
 		CCB9BB2A27E72E7800CE8784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB9BB2927E72E7800CE8784 /* Assets.xcassets */; };
 		CCB9BB2D27E72E7800CE8784 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB9BB2C27E72E7800CE8784 /* Preview Assets.xcassets */; };
+		CCB9BB3927E7338D00CE8784 /* ImgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB3827E7338C00CE8784 /* ImgModel.swift */; };
+		CCB9BB3B27E734DD00CE8784 /* FlowDataMvvMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB3A27E734DD00CE8784 /* FlowDataMvvMViewModel.swift */; };
+		CCB9BB3D27E7369800CE8784 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB3C27E7369800CE8784 /* NetworkManager.swift */; };
+		CCB9BB3F27E745BD00CE8784 /* FlowDataMvvMRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB3E27E745BD00CE8784 /* FlowDataMvvMRow.swift */; };
+		CCB9BB4227E74BC300CE8784 /* FlowDataMvvMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB4127E74BC300CE8784 /* FlowDataMvvMImageView.swift */; };
+		CCB9BB4427E74CF000CE8784 /* ImgLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB4327E74CF000CE8784 /* ImgLoadingViewModel.swift */; };
+		CCB9BB4627E767BF00CE8784 /* ImgCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB4527E767BF00CE8784 /* ImgCacheManager.swift */; };
+		CCB9BB4827E76BC800CE8784 /* ImgFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9BB4727E76BC800CE8784 /* ImgFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		CCB9BB2727E72E7200CE8784 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCB9BB2927E72E7800CE8784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCB9BB2C27E72E7800CE8784 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCB9BB3827E7338C00CE8784 /* ImgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgModel.swift; sourceTree = "<group>"; };
+		CCB9BB3A27E734DD00CE8784 /* FlowDataMvvMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDataMvvMViewModel.swift; sourceTree = "<group>"; };
+		CCB9BB3C27E7369800CE8784 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CCB9BB3E27E745BD00CE8784 /* FlowDataMvvMRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDataMvvMRow.swift; sourceTree = "<group>"; };
+		CCB9BB4127E74BC300CE8784 /* FlowDataMvvMImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDataMvvMImageView.swift; sourceTree = "<group>"; };
+		CCB9BB4327E74CF000CE8784 /* ImgLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgLoadingViewModel.swift; sourceTree = "<group>"; };
+		CCB9BB4527E767BF00CE8784 /* ImgCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgCacheManager.swift; sourceTree = "<group>"; };
+		CCB9BB4727E76BC800CE8784 /* ImgFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +67,12 @@
 		CCB9BB2427E72E7200CE8784 /* FlowDataMvvM */ = {
 			isa = PBXGroup;
 			children = (
+				CCB9BB3627E72EB200CE8784 /* Services */,
+				CCB9BB3527E72E9F00CE8784 /* ViewModels */,
+				CCB9BB3427E72E9100CE8784 /* Views */,
+				CCB9BB3327E72E8100CE8784 /* Models */,
 				CCB9BB2527E72E7200CE8784 /* FlowDataMvvMApp.swift */,
-				CCB9BB2727E72E7200CE8784 /* ContentView.swift */,
-				CCB9BB2927E72E7800CE8784 /* Assets.xcassets */,
+				CCB9BB3727E72ED600CE8784 /* Resources */,
 				CCB9BB2B27E72E7800CE8784 /* Preview Content */,
 			);
 			path = FlowDataMvvM;
@@ -65,6 +84,59 @@
 				CCB9BB2C27E72E7800CE8784 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCB9BB3327E72E8100CE8784 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9BB3827E7338C00CE8784 /* ImgModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCB9BB3427E72E9100CE8784 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9BB2727E72E7200CE8784 /* ContentView.swift */,
+				CCB9BB4027E745C800CE8784 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCB9BB3527E72E9F00CE8784 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9BB3A27E734DD00CE8784 /* FlowDataMvvMViewModel.swift */,
+				CCB9BB4327E74CF000CE8784 /* ImgLoadingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CCB9BB3627E72EB200CE8784 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9BB3C27E7369800CE8784 /* NetworkManager.swift */,
+				CCB9BB4527E767BF00CE8784 /* ImgCacheManager.swift */,
+				CCB9BB4727E76BC800CE8784 /* ImgFileManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CCB9BB3727E72ED600CE8784 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9BB2927E72E7800CE8784 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCB9BB4027E745C800CE8784 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9BB3E27E745BD00CE8784 /* FlowDataMvvMRow.swift */,
+				CCB9BB4127E74BC300CE8784 /* FlowDataMvvMImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +210,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCB9BB2827E72E7200CE8784 /* ContentView.swift in Sources */,
+				CCB9BB3927E7338D00CE8784 /* ImgModel.swift in Sources */,
+				CCB9BB4227E74BC300CE8784 /* FlowDataMvvMImageView.swift in Sources */,
+				CCB9BB4427E74CF000CE8784 /* ImgLoadingViewModel.swift in Sources */,
+				CCB9BB3D27E7369800CE8784 /* NetworkManager.swift in Sources */,
+				CCB9BB3B27E734DD00CE8784 /* FlowDataMvvMViewModel.swift in Sources */,
+				CCB9BB3F27E745BD00CE8784 /* FlowDataMvvMRow.swift in Sources */,
+				CCB9BB4827E76BC800CE8784 /* ImgFileManager.swift in Sources */,
+				CCB9BB4627E767BF00CE8784 /* ImgCacheManager.swift in Sources */,
 				CCB9BB2627E72E7200CE8784 /* FlowDataMvvMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
